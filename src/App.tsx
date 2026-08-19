@@ -7,13 +7,42 @@ function App() {
   return (
     <>
       <h1>Talaid Counter</h1>
-      <br />
 
-      <button onClick={() => setCount(count - 1)}>-</button>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '1rem',
+        }}
+      >
+        <button
+          onClick={() => setCount(count - 1)}
+          style={{
+            padding: '1rem 2rem',
+            background: 'red',
+            color: 'white',
+            border: 'none',
+          }}
+        >
+          -
+        </button>
 
-      <div>{count}</div>
+        <div>{count}</div>
 
-      <button onClick={() => setCount(count + 1)}>+</button>
+        <button
+          onClick={() => setCount(count + 1)}
+          style={{
+            padding: '1rem 2rem',
+            background: 'green',
+            color: 'white',
+            border: 'none',
+          }}
+        >
+        
+          +
+        </button>
+      </div>
     </>
   );
 }
